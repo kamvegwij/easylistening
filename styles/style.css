@@ -1,0 +1,49 @@
+.container{
+    height: 100%;
+    width: 100%;
+}
+/*top bar styling*/
+.topbar{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    height: 25%;
+    padding: 20px;
+    background-color: rgb(169, 169, 219);
+}
+.topbar li{
+    display: block;
+    width: 4em;
+    text-align: center;
+}
+.topbar a{
+    margin: 2px;
+
+}
+/*style the music section*/
+.maincontent{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+#mainhead{
+    border: 1px solid blue;
+    flex-basis: 650px;
+    border-radius: 5px;
+}
+#musiclist{
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 400px;
+    height: 50vh;
+    margin: 4px;
+}
+#playmusic{
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-basis: 400px;
+    height: 50vh;
+    margin: 4px;
+}
