@@ -5,6 +5,8 @@
 main{
     background-color: #800000;
     color: white;
+    text-align: center;
+    justify-content: center;
 }
 /*top bar styling*/
 .topbar{
@@ -18,36 +20,79 @@ main{
 }
 .topbar li{
     display: block;
-    width: 4em;
+    width: 6em;
     text-align: center;
 }
 .topbar a{
     margin: 2px;
-
+}
+.topbar a:hover{
+    color: rgba(255, 255, 255, 0.7);
 }
 /*style the music section*/
+
 .maincontent{
+    height: 90%;
     width: 100%;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
+    padding: 15px;
     display: flex;
 }
-#mainhead{
-    flex-basis: 500px;
-    height: 50vh;
-    border-radius: 15%;
-    background: rgba(0, 0, 0, 0.8);
+.maincontent #leftcontent, #centercontent{
+    position: relative;
+    padding: 15px;
 }
-#musiclist{
-    flex-basis: 650px;
-    height: 100vh;
-    margin: 4px;
+.musicicon{
+    margin: 0px 0px 0px 12px;
 }
-#playmusic{
-    flex-basis: 400px;
-    height: 50vh;
-    margin: 4px;
-    border-radius: 15%;
-    background: rgba(0, 0, 0, 0.8);
+#leftcontent{
+    width: 25%;
+    height: 50%;
+    text-align: left;
+    background-color: rgba(59, 6, 6, 0.349);
+}
+#leftcontent h1{
+    text-align: center;
+    font-weight: 200;
+    margin: 0px 0px 0px 12px;
+    padding-bottom: 20px;
+}
+#leftcontent h2{
+    font-size: medium;
+    font-weight: 500;
+    margin: 15px 0px 7px 12px;
+    color: rgba(201, 79, 79, 0.904);
+    align-items: center;
+    transition: .3s linear;
+}
+#leftcontent h2:hover{
+    cursor: pointer;
+    color: azure;
+}
+#leftcontent h2 span{
+    position: relative;
+    margin-right: 20px;
+}
+#leftcontent h2:hover span::before{
+    border: 2px solid azure;
+}
+#leftcontent h2 span::before{
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid rgba(201, 79, 79, 0.904);
+    border-radius: 50%;
+    top: 8px;
+    transition: .3s linear;
+}
+#musiccontent{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+/*center music content*/
+#centercontent{
+    width: 75%;
+    height: 90%;
 }
